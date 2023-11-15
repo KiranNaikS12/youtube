@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YoutubeClone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="sidebar.css">
+  </head>
+  <body>
+
+    <!-- header starts -->
+    <header>
+        <div class="head">
+            <div class="left-section">
+                <i  class="material-symbols-outlined">
+                    menu
+                </i>
+                <img class="youtube_log" src="image/youlogo.jpeg" alt="">
+            </div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search" />
+                <button class="search-button">
+                    <i class="material-symbols-outlined">
+                        search
+                    </i>
+
+                    <!-- For creating tool tip -->
+                    <div class="tool-tip">Search</div>
+                </button>
+                <button class="voice-search-button">
+                    <i class="material-symbols-outlined">
+                        mic
+                    </i>
+                    <div class="tool-tip">Search with you voice</div>
+                </button>
+            </div>
+            <div class="right-section">
+                <div class="upload-icon-container">
+                    <i  class="material-symbols-outlined">
+                        video_call
+                    </i>
+                    <div class="tool-tip">Create</div>
+                </div>
+                <div class="app-icon-container">
+                    <i class="material-symbols-outlined">
+                        apps
+                    </i>
+                    <div class="tool-tip">More</div>
+                </div>
+                <div class="notification-icon-content">
+                    <i class="material-symbols-outlined">
+                        notifications
+                    </i>
+                    <div class="tool-tip">Notification</div>
+                    <div class="notification-count">5</div>
+                </div>
+                <img class="current-user-picture" src="image/profilr.jpg" alt="">
+            </div>
+        </div>
+    </header>
+ <!-- header ends -->
+
+<!-- sidebar starts -->
+<sidebar>
+    <div class="sidebar">
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">Home</i>
+            <span>Home</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">local_fire_department</i>
+            <span>Trending</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">subscriptions</i>
+            <span>subscriptions</span>
+         </div>
+         <hr/>
+
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">account_box</i>
+            <span>Your Channel</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">history</i>
+            <span>History</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">slideshow</i>
+            <span>Your Videos</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">schedule</i>
+            <span>Watch Later</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">thumb_up</i>
+            <span>Liked Videos</span>
+         </div>
+         <hr>
+         <p class="sidebar-link-info">EXPLORE</p>
+         <div class="sidbar-link">
+            
+            <i class="material-symbols-outlined">local_mall</i>
+            <span>Shopping</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">music_note</i>
+            <span>Music</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">movie</i>
+            <span>Movies</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">sensors</i>
+            <span>Live</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">sports_esports</i>
+            <span>Gamming</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">news</i>
+            <span>News</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">trophy</i>
+            <span>Sports</span>
+         </div>
+         <hr>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">settings</i>
+            <span>Setting</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">flag</i>
+            <span>Report History</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">help</i>
+            <span>Help</span>
+         </div>
+         <div class="sidbar-link">
+            <i class="material-symbols-outlined">feedback</i>
+            <span>Feedback</span>
+         </div>
+        <hr>     
+        <div class="about-sidbar">
+            <p>About Press Copyright Contact us Creators Advertise Developers</p> 
+        </div>  
+
+        <div class="Copyright">
+            <p>&#169; GOOGLE LLC</p>
+        </div>
+            
+        
+    </div>
+</sidebar>
+<!-- sidebar ends  -->
+    
+    
+   
+    <!-- Main container of all container  -->
+    <div class="video-grid">
+        <div class="video-preview">  
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="image/img1.webp" alt="firstImage" />
+                <div class="video-time">
+                   14:20
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="image/firstlogo.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Wildlife (4K UHD) 24/7 - Relaxing Music With Beautiful Nature 
+                    </p>
+                    <div class="video-description">
+                        &#8942;
+                    </div>
+                    <p class="video-author">RelaxingNature</p>
+                    <p class="video-stats">10M views &#183; 2 years ago</p>
+                </div>
+            </div>  
+        </div>
+
+        <div class="video-preview">  
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="image/img2.webp" alt="firstImage" />
+                <div class="video-time">
+                   1:10:00
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="image/2logo.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        World Leading Psychologist On why you're failing... 
+                    </p>
+                    <div class="video-description">
+                        &#8942;
+                    </div>
+                    <p class="video-author">Jay Shetty</p>
+                    <p class="video-stats">112k views &#183; 1 years ago</p>
+                </div>
+            </div>  
+        </div>
+        <div class="video-preview">  
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="image/img3.webp" alt="" />
+                <div class="video-time">
+                   2:20:00
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="image/3logo.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Our Planet| Netflix | Documentary Series
+                    </p>
+                    <div class="video-description">
+                        &#8942;
+                    </div>
+                    <p class="video-author">RelaxingNature</p>
+                    <p class="video-stats">34M views &#183; 2 years ago</p>
+                </div>
+            </div>  
+        </div>
+        <div class="video-preview">  
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="image/img4.webp" alt="firstImage" />
+                <div class="video-time">
+                   14:20
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="image/4logo.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Messi is infinity 
+                    </p>
+                    <div class="video-description">
+                        &#8942;
+                    </div>
+                    <p class="video-author">MessiMagic</p>
+                    <p class="video-stats">1M views &#183; 2 weeks ago</p>
+                </div>
+            </div>  
+        </div>
+        <div class="video-preview">  
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="image/img5.webp" alt="firstImage" />
+                <div class="video-time">
+                   19:42
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="image/5logo.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                       This Filipino Tribe Lives in the water
+                    <div class="video-description">
+                        &#8942;
+                    </div>
+                    <p class="video-author">FRENCHINE</p>
+                    <p class="video-stats">1.8M views &#183; 1 month ago</p>
+                </div>
+            </div>  
+        </div>
+        <div class="video-preview">  
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="image/img6.webp" alt="firstImage" />
+                <div class="video-time">
+                   14:20
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="image/6logo.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        WHEN ZINEDINE ZIDANE MET LIONEL MESSI
+                    </p>
+                    <div class="video-description">
+                        &#8942;
+                    </div>
+                    <p class="video-author">adidas Football</p>
+                    <p class="video-stats">4.2M views &#183; 2 days ago</p>
+                </div>
+            </div>  
+        </div> 
+        <div class="video-preview">  
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="image/img7.webp" alt="firstImage" />
+                <div class="video-time">
+                   12:56
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="image/7logo.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Aliens Are Real: Former ISRO Scientist Reveals the Truth
+                    </p>
+                    <div class="video-description">
+                        &#8942;
+                    </div>
+                    <p class="video-author">TRS Clips</p>
+                    <p class="video-stats">401k views &#183; 4 days ago</p>
+                </div>
+            </div>  
+        </div>
+        <div class="video-preview">  
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="image/img8.webp" alt="firstImage" />
+                <div class="video-time">
+                   25:47
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="image/8logo.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Harvard Professor Explains Algorithms in 5 Levels of Difficulty..
+                    </p>
+                    <div class="video-description">
+                        &#8942;
+                    </div>
+                    <p class="video-author">WIRED</p>
+                    <p class="video-stats">396k views &#183; 6 days ago</p>
+                </div>
+            </div>  
+        </div>
+        <div class="video-preview">  
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="image/img9.webp" alt="firstImage" />
+                <div class="video-time">
+                   30:54
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="image/9logo.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Talk with google Recruiter | Resume, Tier 3, CGPA, Career Gap...
+                    </p>
+                    <div class="video-description">
+                        &#8942;
+                    </div>
+                    <p class="video-author">Fraz</p>
+                    <p class="video-stats">124k views &#183; 2 days ago</p>
+                </div>
+            </div>  
+        </div>
+        <div class="video-preview">  
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="image/img10.webp" alt="firstImage" />
+                <div class="video-time">
+                   14:57
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="image/10logo.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Exclusive tour of Bharat Mandapam with Minister Piyush Goyal.
+                    </p>
+                    <div class="video-description">
+                        &#8942;
+                    </div>
+                    <p class="video-author">Abhi and Niyu</p>
+                    <p class="video-stats">4.2M views &#183; 2 days ago</p>
+                </div>
+            </div>  
+        </div>
+        <div class="video-preview">  
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="image/img11.webp" alt="firstImage" />
+                <div class="video-time">
+                   14:20
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="image/11logo.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        All Messi's FREE KICK GOAlS ⚽🔥
+                    </p>
+                    <div class="video-description">
+                        &#8942;
+                    </div>
+                    <p class="video-author">El Golazo</p>
+                    <p class="video-stats">1.4M views &#183; 2 days ago</p>
+                </div>
+            </div>  
+        </div>
+        <div class="video-preview">  
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="image/img12.webp" alt="firstImage" />
+                <div class="video-time">
+                   14:20
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="image/12logo.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Incredible India 4K - Beyond the Sterotypes: The Real India Revealed
+                    </p>
+                    <div class="video-description">
+                        &#8942;
+                    </div>
+                    <p class="video-author">Explore India</p>
+                    <p class="video-stats">720k views &#183; 2 days ago</p>
+                </div>
+            </div>  
+        </div>
+    </div> 
+  </body>
+</html>
