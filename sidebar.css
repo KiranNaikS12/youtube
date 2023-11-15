@@ -1,0 +1,73 @@
+.sidebar
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top:55px;
+    background-color: white;
+    width:190px;
+    z-index: 100;
+    cursor: pointer;
+    overflow-y: scroll;
+    
+}
+
+.sidbar-link
+{
+    height: 45px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.sidebar p
+{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 30px;
+    font-size: 15px;
+    font-family: Roboto,arial;
+    font-weight: 700;
+}
+
+.sidbar-link:hover
+{
+  background-color: rgb(227, 224, 224);
+  
+}
+
+.sidbar-link span{
+    margin-left: 15px;
+    font-size: 13px;
+    font-family: Roboto,arial;
+}
+
+.sidbar-link i
+{
+   color: rgb(77, 77, 77);
+   height: 24px;
+   
+}
+
+.about-sidbar p
+{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.Copyright p
+{
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 15px;
+    font-weight: 400;
+    
+}
+
+
+

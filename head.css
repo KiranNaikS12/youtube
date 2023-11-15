@@ -1,0 +1,267 @@
+.search-bar 
+{
+  flex: 1;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 189, 189);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.1);
+  width: 0;  /*by giving 0 value that it should shrink*/
+} 
+
+/* we dont need this because we have put search bar inside the header  */
+
+.search-bar::placeholder
+{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+/* converting header contents to align :horizontally */
+.head
+{
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: space-between;
+    /* css positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(181, 180, 180);
+    z-index: 100;
+    /* here z-index is used so that header will overlap main element */
+    cursor: pointer;
+}
+
+.left-section
+{
+    display: flex;
+    /* this is needed because we need to get access to aligning property  */
+    /* background-color: lightblue; */
+    /* width: 150px; */
+    align-items: center;
+}
+
+.left-section i
+{
+    height: 30px;
+    margin-left: 20px;
+}
+
+.left-section img
+{
+    height: 30px;
+    margin-bottom: 7px;
+    margin-left: 20px;
+}
+
+
+.middle-section
+{
+    
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+  /* space for each container in space */
+    max-width: 500px; 
+    /* Is used to limit to the width of section  */
+    display: flex;
+    align-items: center;
+}
+
+.middle-section button
+{
+    height: 33px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    
+    border-color: rgb(192, 189, 189);
+    margin-left: -1px;
+}
+
+.middle-section i
+{
+   height: 25px;
+   opacity: 0.5;
+}
+
+.search-button
+{
+    margin-right:8px;
+    border-style: solid;
+    position: relative;
+    cursor: pointer;
+}
+
+.search-button .tool-tip
+{
+    position: absolute;
+    background-color: rgb(139, 139, 139);
+    color: white;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    
+
+}
+
+.search-button:hover .tool-tip
+{
+    opacity: 1;
+}
+
+.voice-search-button
+{
+    border-radius: 50%;
+   border-style: none;
+}
+
+.voice-search-button .tool-tip
+{
+    position: absolute;
+    background-color: rgb(139, 139, 139);
+    color: white;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.voice-search-button:hover .tool-tip
+{
+    opacity: 1;
+}
+
+.upload-icon-container
+{
+   position: relative;
+}
+
+.upload-icon-container .tool-tip
+{
+    position: absolute;
+    background-color: rgb(139, 139, 139);
+    color: white;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none; 
+}
+
+.upload-icon-container:hover .tool-tip
+{
+    opacity: 1;
+}
+
+.app-icon-container
+{
+    position: relative;
+}
+
+.app-icon-container .tool-tip
+{
+    position: absolute;
+    background-color: rgb(139, 139, 139);
+    color: white;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none; 
+}
+
+.app-icon-container:hover .tool-tip
+{
+    opacity: 1;
+}
+
+.notification-icon-content
+{
+    position: relative;
+}
+
+.notification-icon-content .tool-tip
+{
+    position: absolute;
+    background-color: rgb(139, 139, 139);
+    color: white;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none; 
+}
+
+.notification-icon-content:hover .tool-tip
+{
+    opacity: 1;
+}
+
+.right-section
+{
+    /* background-color: lightgreen; */
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0; /*which prevent flex box from shrinking*/
+}
+
+.right-section i
+{
+    height: 24px;
+
+}
+
+.current-user-picture
+{
+    
+    height: 30px;
+    border-radius: 16px;
+}
+
+
+.notification-icon-content
+{
+    position: relative;
+}
+
+.notification-count
+{
+   position: absolute;
+   top: -3px;
+   right: -4px;
+   background-color: red;
+   color:white;
+   border-radius: 10px;
+   font-family: Roboto, arial;
+   font-size: 11px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-bottom: 2px;
+   padding-top: 2px;
+   
+}
